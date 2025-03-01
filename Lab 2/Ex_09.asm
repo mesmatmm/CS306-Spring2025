@@ -13,7 +13,7 @@ AND AX, 0000111111001111B
 
 ; Invert the leftmost 6 bits of AX and store the result in BX
 MOV BX, AX   
-XOR BX, 0000111111000000B
+XOR BX, 1111110000000000B
 ;XOR BX, 0FC00H  ; Invert the leftmost 6 bits
 
 ; B) Initialize the low order byte of CX by EFh and save its one's complement at the high order byte
