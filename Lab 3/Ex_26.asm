@@ -1,0 +1,14 @@
+ORG 100h
+
+MOV CX, 6
+MOV SI, 0
+L1: 
+    MOV AL, DATA[SI]
+    MOV COPY[SI], AL
+    INC SI
+LOOP L1
+
+RET     
+
+DATA DB 10h, 11h, 12h, 13h, 14h, 15h
+COPY DB 6 dup (?)

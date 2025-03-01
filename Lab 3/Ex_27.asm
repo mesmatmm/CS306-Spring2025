@@ -1,0 +1,16 @@
+ORG 100h
+DATA DB 5 DUP(10H)
+SUM DB ?
+
+LEA SI, DATA
+MOV AL, 0
+MOV CX, 5
+
+L1:
+    ADD AL, [SI]
+    INC SI
+LOOP L1
+
+MOV SUM, AL
+
+RET
