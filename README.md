@@ -1,11 +1,13 @@
 # CS306 : Operating Systems - Spring 2025
+
 ---
 
  You can download Emu8086 from here
  [Emu8086](https://archive.org/details/Emu8086V408r11)
 ***
 
-# Lab Outline:
+# Lab Outline
+
 - Basic Structure for Assembly X8086 program.
 - Basic instructions: **MOV**, **ADD**, **SUB**
 - Register VS Memory
@@ -29,16 +31,37 @@
 - Define variables (initialized or not):
   - **db** (define byte = 8 bits).
   - **dw** (define word = 2 bytes = 16 bits).
+
 ***
-## Lab 3:
+
+## Lab 3
+
 - how to define an array (initialized or not):
-    - array of bytes
-    - array of words
+  - array of bytes
+  - array of words
 - How to access the array elements:
-    - using **direct addressing** (or Using **direct-offset Addressing**).
-    - using **index addressing**.
-    - using **indirect addressing** by (**LEA** or **OFFSET**).
+  - using **direct addressing** (or Using **direct-offset Addressing**).
+  - using **index addressing**.
+  - using **indirect addressing** by (**LEA** or **OFFSET**).
 - How to define **Label**.
 - Unconditional control instruction: **JUMP**.
 - **Loop**
 - Nested Loops.
+
+***
+
+## Lab 4
+
+- More exercises on using **Loop** and arrays.
+- More instrustions:
+  - **CMP**
+  - **JA**
+  - **JG**
+  - **CBW**
+  - **CWD**
+- how different **FLAGS** are affected by some instructions:
+  - **ZP**: Zero Flag.
+  - **CF**: Carry Flag.
+  - **OF**: Overflow Flag.
+
+***
