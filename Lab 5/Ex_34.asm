@@ -1,0 +1,16 @@
+Include 'emu8086.inc'
+
+ORG 100h
+
+MOV SI, OFFSET MESSAGE
+MOV CX, 5
+L1:
+    PUTC [SI]
+    INC SI
+LOOP L1
+
+GoTOXY 40, 12
+PRINTN 'DISPLAYING IS DONE'     ; 18 Characters
+RET
+
+MESSAGE DB 'HELLO'
