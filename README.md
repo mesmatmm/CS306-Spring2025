@@ -65,3 +65,18 @@
   - **OF**: Overflow Flag.
 
 ***
+
+## Lab 5 (Last lab For Assembly)
+
+- More difficult exercises covering **Loop**,  arrays, and conditional jump control instructions for unsigned and signed.
+- **PRINT** and **PRINT**
+- More instrustions:
+  - **ADC**: Add with Carry
+  - **JC**: if CF = 1 then jump
+  - **JNC**: if CF = 0 then jump
+- FYI:
+  - Printing using **Video Mode**.
+  - **PUTC**
+
+
+***
