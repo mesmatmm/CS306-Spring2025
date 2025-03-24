@@ -69,7 +69,7 @@
 ## Lab 5 (Last lab For Assembly)
 
 - More difficult exercises covering **Loop**,  arrays, and conditional jump control instructions for unsigned and signed.
-- **PRINT** and **PRINT**
+- **PRINT** and **PRINTN**
 - More instrustions:
   - **ADC**: Add with Carry
   - **JC**: if CF = 1 then jump
@@ -80,3 +80,15 @@
 
 
 ***
+***
+
+## Lab 6 (Threads using C - 1)
+
+- Processes and Threads: Definitions and Differences
+- Threads vs Processes
+- Need for Multithreading
+- Features of Using Threads
+- Types of Threads
+- Thread Libraries
+- Creating and Assigning Work to Threads
+- Compile and Run C Files with Threads
