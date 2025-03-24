@@ -53,7 +53,7 @@ Where **VAR1**, **VAR2** and **VAR3** are byte variables, which have the values 
 ---
 
 ### **Ex_17**
-Write a program that **copies** the elements of the byte array **Marks = 10, 20, 30** into a byte array **COPY** using Indirect Addressing.
+Write a program that **copies** the first two elements of the byte array **Marks = 10, 20, 30** into a byte array **COPY** using Indirect Addressing.
 
 ---
 
