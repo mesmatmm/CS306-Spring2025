@@ -2,11 +2,35 @@
 
 ---
 
- You can download Emu8086 from here
- [Emu8086](https://archive.org/details/Emu8086V408r11)
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+### Table of Contents
+- [CS306 : Operating Systems - Spring 2025](#cs306--operating-systems---spring-2025)
+    - [Table of Contents](#table-of-contents)
+- [Lab Outline](#lab-outline)
+  - [Assembly X8086](#assembly-x8086)
+    - [Labs 1 and 2](#labs-1-and-2)
+    - [Lab 3](#lab-3)
+    - [Lab 4](#lab-4)
+    - [Lab 5](#lab-5)
+  - [Threads using C](#threads-using-c)
+    - [Lab 6](#lab-6)
+    - [Lab 7](#lab-7)
+
+<!-- /code_chunk_output -->
+
 ***
 
 # Lab Outline
+
+## Assembly X8086
+
+- We're using Emu8086 to simulate the execution of the assembly program.
+- You can download Emu8086 from here
+ [Emu8086](https://archive.org/details/Emu8086V408r11)
+
+### Labs 1 and 2
 
 - Basic Structure for Assembly X8086 program.
 - Basic instructions: **MOV**, **ADD**, **SUB**
@@ -34,7 +58,7 @@
 
 ***
 
-## Lab 3
+### Lab 3
 
 - how to define an array (initialized or not):
   - array of bytes
@@ -50,7 +74,7 @@
 
 ***
 
-## Lab 4
+### Lab 4
 
 - More exercises on using **Loop** and arrays.
 - More instrustions:
@@ -66,7 +90,7 @@
 
 ***
 
-## Lab 5 (Last lab For Assembly)
+### Lab 5
 
 - More difficult exercises covering **Loop**,  arrays, and conditional jump control instructions for unsigned and signed.
 - **PRINT** and **PRINTN**
@@ -78,11 +102,12 @@
   - Printing using **Video Mode**.
   - **PUTC**
 
-
 ***
 ***
 
-## Lab 6 (Threads using C - 1)
+## Threads using C
+
+### Lab 6
 
 - Processes and Threads: Definitions and Differences
 - Threads vs Processes
@@ -92,3 +117,16 @@
 - Thread Libraries
 - Creating and Assigning Work to Threads
 - Compile and Run C Files with Threads
+- Pointers & References.
+
+### Lab 7
+- Struct Usage in C
+- How to use struct to pass multiple values to the thread function
+- Retrieve value from Thread function
+- Passing & Retrieving Multiple Values via Struct
+- Synchronization between Threads
+- Race condition
+- Deadlocks and Livelocks.
+- Common Synchronization Tools
+  - **mutex (Mutual Exclusion)**
+  - **semaphore**
