@@ -17,6 +17,8 @@
   - [Threads using C](#threads-using-c)
     - [Lab 6](#lab-6)
     - [Lab 7](#lab-7)
+    - [Lab 8](#lab-8)
+    - [Lab 9 (Practical Exam)](#lab-9-practical-exam)
 
 <!-- /code_chunk_output -->
 
@@ -130,3 +132,12 @@
 - Common Synchronization Tools
   - **mutex (Mutual Exclusion)**
   - **semaphore**
+
+### Lab 8
+- Case Studies
+  - **Producer-Consumer** Problem with Mutex and Condition Variables
+  - **Producer-Consumer** Problem with Semaphore
+  - **Readers-Writers** Problem
+  - **Dining-Philosophers** Problem
+
+### Lab 9 (Practical Exam)
