@@ -19,6 +19,8 @@
     - [Lab 7](#lab-7)
     - [Lab 8](#lab-8)
     - [Lab 9 (Practical Exam)](#lab-9-practical-exam)
+  - [Threads using JAVA](#threads-using-java)
+    - [Lab 10](#lab-10)
 
 <!-- /code_chunk_output -->
 
@@ -122,6 +124,7 @@
 - Pointers & References.
 
 ### Lab 7
+
 - Struct Usage in C
 - How to use struct to pass multiple values to the thread function
 - Retrieve value from Thread function
@@ -134,6 +137,7 @@
   - **semaphore**
 
 ### Lab 8
+
 - Case Studies
   - **Producer-Consumer** Problem with Mutex and Condition Variables
   - **Producer-Consumer** Problem with Semaphore
@@ -141,3 +145,28 @@
   - **Dining-Philosophers** Problem
 
 ### Lab 9 (Practical Exam)
+
+***
+***
+
+## Threads using JAVA
+
+### Lab 10
+
+- Creating threads using **Thread** class
+- Creating threads using **Runnable** interface
+- Synchronizartion tools:
+  - **volatile** keyword
+  - **synchronized** keyword
+    - **syncronized** method
+    - **synchronized** block
+  - locks
+  - mutex
+  - semaphores
+  - condition variables
+- Creating Thread Pool using **ExecutorService**
+- Lambda expresssion
+- Using **Future** to wait for the returned value from a thread
+
+***
+***
