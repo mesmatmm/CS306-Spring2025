@@ -21,6 +21,8 @@
     - [Lab 9 (Practical Exam)](#lab-9-practical-exam)
   - [Threads using JAVA](#threads-using-java)
     - [Lab 10](#lab-10)
+    - [Lab 11 (Self-Study)](#lab-11-self-study)
+    - [Lab 12 (Practical Exam)](#lab-12-practical-exam)
 
 <!-- /code_chunk_output -->
 
@@ -167,6 +169,43 @@
 - Creating Thread Pool using **ExecutorService**
 - Lambda expresssion
 - Using **Future** to wait for the returned value from a thread
+
+
+### Lab 11 (Self-Study)
+
+1. **Thread Priorities (Ex12)**  
+   - Setting thread priorities (`MIN_PRIORITY`, `NORM_PRIORITY`, `MAX_PRIORITY`).  
+   - OS-dependent scheduling behavior (no strict guarantees).  
+
+2. **Wait-Notify Mechanism (Ex13)**  
+   - Basic thread coordination using `wait()` and `notify()`.  
+   - Guarded blocks with `synchronized` and loop checks for spurious wakeups.  
+
+3. **Producer-Consumer Pattern (Ex14)**  
+   - Synchronized buffer with `wait()`/`notifyAll()`.  
+   - Handles empty/full states to prevent race conditions.  
+
+4. **ReadWriteLock (Ex15)**  
+   - `ReentrantReadWriteLock` for concurrent reads and exclusive writes.  
+   - Improves performance in read-heavy scenarios.  
+
+5. **CountDownLatch (Ex16)**  
+   - One-time synchronization: main thread waits for worker threads.  
+   - `countDown()` decrements; `await()` blocks until zero.  
+
+6. **CyclicBarrier (Ex17)**  
+   - Reusable barrier for thread synchronization at fixed points.  
+   - Optional barrier action triggers when all threads arrive.  
+
+7. **ThreadLocal (Ex18, Ex19)**  
+   - Thread-local variables for isolated per-thread storage.  
+   - Two approaches: shared `Map` (Ex18) vs. `Future`/`ExecutorService` (Ex19).  
+
+8. **Atomic Operations (Ex20)**  
+   - `AtomicInteger` for lock-free, thread-safe counters.  
+   - Methods like `incrementAndGet()` avoid race conditions.  
+
+### Lab 12 (Practical Exam)
 
 ***
 ***
