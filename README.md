@@ -206,6 +206,7 @@
    - Methods like `incrementAndGet()` avoid race conditions.  
 
 ### Lab 12 (Practical Exam)
+  - Tuesday: May 13, 2025
 
 ***
 ***
