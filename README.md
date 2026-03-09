@@ -26,15 +26,15 @@
 
 <!-- /code_chunk_output -->
 
-***
+---
 
 ## Lab Summary
 
 This repository covers the lab sessions for CS306 Operating Systems, structured into three main tracks. The course begins with low-level **x86 Assembly** programming using Emu8086, covering registers, memory, control flow, arrays, and arithmetic instructions. It then transitions to **multithreading in C** using POSIX threads (pthreads), exploring thread creation, synchronization primitives (mutex, semaphore, condition variables), and classic concurrency problems. Finally, the course covers **multithreading in Java**, introducing the Thread API, Runnable interface, synchronization tools, thread pools, and concurrent utilities from `java.util.concurrent`. The objective is to build a solid understanding of concurrency, synchronization, and low-level system programming from both hardware and software perspectives.
 
-***
+---
 
-# Lab Outline
+## Lab Outline
 
 ## Assembly X8086
 
@@ -72,19 +72,19 @@ This repository covers the lab sessions for CS306 Operating Systems, structured 
 
 | File | Description |
 | --- | --- |
-| [Ex_01.asm](Lab%2001/Ex_01.asm) | Basic MOV, ADD, SUB |
-| [Ex_02.asm](Lab%2001/Ex_02.asm) | Register operations |
-| [Ex_03.asm](Lab%2001/Ex_03.asm) | Memory segments |
-| [Ex_04.asm](Lab%2001/Ex_04.asm) | Bitwise: OR, AND, XOR |
-| [Ex_05.asm](Lab%2001/Ex_05.asm) | NOT, NEG, XCHG |
-| [Ex_06.asm](Lab%2001/Ex_06.asm) | MUL and DIV |
-| [Ex_07.asm](Lab%2002/Ex_07.asm) | Variables (db, dw) |
-| [Ex_08.asm](Lab%2002/Ex_08.asm) | Memory and registers |
-| [Ex_09.asm](Lab%2002/Ex_09.asm) | Mixed instructions |
-| [Ex_10.asm](Lab%2002/Ex_10.asm) | Mixed instructions |
-| [Ex_11.asm](Lab%2002/Ex_11.asm) | Mixed instructions |
+| [Ex_01.asm](Lab%2001/Ex_01.asm) | MOV AX and SI, store register value to memory via SI address |
+| [Ex_02.asm](Lab%2001/Ex_02.asm) | Initialize AX and DX with values, subtract AX from DX |
+| [Ex_03.asm](Lab%2001/Ex_03.asm) | Copy values between register parts, swap AX/BX with XCHG, store to memory |
+| [Ex_04.asm](Lab%2001/Ex_04.asm) | Load string characters 'NO' and 'HELLO' into registers and ES segment |
+| [Ex_05.asm](Lab%2001/Ex_05.asm) | Store AL value at SI address then swap AL with memory using XCHG |
+| [Ex_06.asm](Lab%2001/Ex_06.asm) | Bitwise OR, AND, XOR operations on AL and DL register values |
+| [Ex_07.asm](Lab%2002/Ex_07.asm) | One's complement of AL (NOT), two's complement of BH (NEG), save results |
+| [Ex_08.asm](Lab%2002/Ex_08.asm) | ADD, INC, SUB, DEC, XCHG operations with result stored in memory |
+| [Ex_09.asm](Lab%2002/Ex_09.asm) | Bitwise OR/AND/XOR and one's/two's complement on register values |
+| [Ex_10.asm](Lab%2002/Ex_10.asm) | Calculate area (7×3) and half-area using MUL and DIV |
+| [Ex_11.asm](Lab%2002/Ex_11.asm) | Compute 5! (120) using sequential MUL operations |
 
-***
+---
 
 ### Lab 3 — [Lab 03/](Lab%2003/)
 
@@ -104,24 +104,24 @@ This repository covers the lab sessions for CS306 Operating Systems, structured 
 
 | File | Description |
 | --- | --- |
-| [Ex_12.asm](Lab%2003/Ex_12.asm) | Array definition and access |
-| [Ex_13.asm](Lab%2003/Ex_13.asm) | Direct addressing |
-| [Ex_14.asm](Lab%2003/Ex_14.asm) | Index addressing |
-| [Ex_15.asm](Lab%2003/Ex_15.asm) | Indirect addressing (LEA/OFFSET) |
-| [Ex_16.asm](Lab%2003/Ex_16.asm) | Labels and JMP |
-| [Ex_17.asm](Lab%2003/Ex_17.asm) | Loop |
-| [Ex_18.asm](Lab%2003/Ex_18.asm) | Loop |
-| [Ex_19.asm](Lab%2003/Ex_19.asm) | Loop |
-| [Ex_20.asm](Lab%2003/Ex_20.asm) | Nested Loops |
-| [Ex_21.asm](Lab%2003/Ex_21.asm) | Nested Loops |
-| [Ex_22.asm](Lab%2003/Ex_22.asm) | Array + Loop |
-| [Ex_23.asm](Lab%2003/Ex_23.asm) | Array + Loop |
-| [Ex_24.asm](Lab%2003/Ex_24.asm) | Array + Loop |
-| [Ex_25.asm](Lab%2003/Ex_25.asm) | Array + Loop |
-| [Ex_26.asm](Lab%2003/Ex_26.asm) | Array + Loop |
-| [Ex_27.asm](Lab%2003/Ex_27.asm) | Array + Loop |
+| [Ex_12.asm](Lab%2003/Ex_12.asm) | Multiply 6×7 then divide by 2, store quotient in variable |
+| [Ex_13.asm](Lab%2003/Ex_13.asm) | Calculate 20% sale discount on price 6000, subtract to get final price |
+| [Ex_14.asm](Lab%2003/Ex_14.asm) | Copy 6-byte array using direct and index addressing into destination |
+| [Ex_15.asm](Lab%2003/Ex_15.asm) | Sum three marks (60+80+90) and divide by 3 to calculate average |
+| [Ex_16.asm](Lab%2003/Ex_16.asm) | Negate var1, add var2, multiply by var3 and store result |
+| [Ex_17.asm](Lab%2003/Ex_17.asm) | Copy first two array elements using indirect addressing (LEA/OFFSET) |
+| [Ex_18.asm](Lab%2003/Ex_18.asm) | Load array bytes into register portions using direct-offset addressing |
+| [Ex_19.asm](Lab%2003/Ex_19.asm) | Copy word values between arrays using direct-offset addressing |
+| [Ex_20.asm](Lab%2003/Ex_20.asm) | Swap two variables using XCHG instruction |
+| [Ex_21.asm](Lab%2003/Ex_21.asm) | Copy variable value using indirect addressing with offsets |
+| [Ex_22.asm](Lab%2003/Ex_22.asm) | Trace JMP and conditional jump flow to determine final register values |
+| [Ex_23.asm](Lab%2003/Ex_23.asm) | Add 2 to AL three times using LOOP with CX counter, increment BL |
+| [Ex_24.asm](Lab%2003/Ex_24.asm) | Trace LOOP behavior when CX starts at 0 |
+| [Ex_25.asm](Lab%2003/Ex_25.asm) | Nested loops: outer 5 iterations, inner 2 iterations |
+| [Ex_26.asm](Lab%2003/Ex_26.asm) | Copy 6-byte array using LOOP with index counter |
+| [Ex_27.asm](Lab%2003/Ex_27.asm) | Sum five 0x10 bytes in an array using LOOP accumulation |
 
-***
+---
 
 ### Lab 4 — [Lab 04/](Lab%2004/)
 
@@ -141,14 +141,14 @@ This repository covers the lab sessions for CS306 Operating Systems, structured 
 
 | File | Description |
 | --- | --- |
-| [Ex_28.asm](Lab%2004/Ex_28.asm) | CMP and conditional jumps |
-| [Ex_29.asm](Lab%2004/Ex_29.asm) | JA, JG usage |
-| [Ex_30.asm](Lab%2004/Ex_30.asm) | CBW, CWD |
-| [Ex_31.asm](Lab%2004/Ex_31.asm) | Flags: ZF, CF, OF |
-| [Ex_32.asm](Lab%2004/Ex_32.asm) | Loop + arrays + CMP |
-| [Ex_33.asm](Lab%2004/Ex_33.asm) | Loop + arrays + CMP |
+| [Ex_28.asm](Lab%2004/Ex_28.asm) | Generate incrementing array values, sum them, calculate average |
+| [Ex_29.asm](Lab%2004/Ex_29.asm) | Copy 41-character string into target array using LOOP with index |
+| [Ex_30.asm](Lab%2004/Ex_30.asm) | Generate even/odd numbers, sum and average them separately using CBW/CWD |
+| [Ex_31.asm](Lab%2004/Ex_31.asm) | Fill two 1KB memory blocks with values then exchange their contents |
+| [Ex_32.asm](Lab%2004/Ex_32.asm) | Compare two unsigned numbers and identify larger/smaller using JA |
+| [Ex_33.asm](Lab%2004/Ex_33.asm) | Compare two signed numbers and identify larger/smaller using JG |
 
-***
+---
 
 ### Lab 5 — [Lab 05/](Lab%2005/)
 
@@ -166,17 +166,17 @@ This repository covers the lab sessions for CS306 Operating Systems, structured 
 
 | File | Description |
 | --- | --- |
-| [Ex_34.asm](Lab%2005/Ex_34.asm) | Loop + conditional jumps |
-| [Ex_35.asm](Lab%2005/Ex_35.asm) | Signed/unsigned comparison |
-| [Ex_36.asm](Lab%2005/Ex_36.asm) | ADC, JC, JNC |
-| [Ex_37.asm](Lab%2005/Ex_37.asm) | PRINT / PRINTN |
-| [Ex_38.asm](Lab%2005/Ex_38.asm) | Video Mode / PUTC |
-| [Ex_39.asm](Lab%2005/Ex_39.asm) | Mixed exercises |
-| [Ex_40.asm](Lab%2005/Ex_40.asm) | Mixed exercises |
-| [Lab5 Test.asm](Lab%2005/Lab5%20Test.asm) | Lab 5 test program |
+| [Ex_34.asm](Lab%2005/Ex_34.asm) | Print "HELLO" character by character using PUTC macro in a loop |
+| [Ex_35.asm](Lab%2005/Ex_35.asm) | Write "HELLO" string directly to video memory at specific screen locations |
+| [Ex_36.asm](Lab%2005/Ex_36.asm) | Write "HELLO" to video memory using extra segment (ES) addressing |
+| [Ex_37.asm](Lab%2005/Ex_37.asm) | Sign-extend bytes with CBW and perform signed addition |
+| [Ex_38.asm](Lab%2005/Ex_38.asm) | Sum byte array with ADC for carry handling, display result via video memory |
+| [Ex_39.asm](Lab%2005/Ex_39.asm) | Find maximum grade from array of 10 using CMP and JA |
+| [Ex_40.asm](Lab%2005/Ex_40.asm) | Find minimum temperature from signed array using CMP and JL |
+| [Lab5 Test.asm](Lab%2005/Lab5%20Test.asm) | Commented reference sheet of instruction types and addressing modes |
 
-***
-***
+---
+---
 
 ## Threads using C
 
@@ -194,13 +194,13 @@ This repository covers the lab sessions for CS306 Operating Systems, structured 
 
 | File | Description |
 | --- | --- |
-| [Ex_00.c](Lab%2006/Ex_00.c) | Basic thread creation |
-| [Ex_01.c](Lab%2006/Ex_01.c) | Thread with argument |
-| [Ex_02.c](Lab%2006/Ex_02.c) | Multiple threads |
-| [Ex_03.c](Lab%2006/Ex_03.c) | Thread joining |
-| [Ex_04.c](Lab%2006/Ex_04.c) | Thread with return value |
-| [Ex_05.c](Lab%2006/Ex_05.c) | Pointers & references |
-| [Ex_06.c](Lab%2006/Ex_06.c) | Mixed thread concepts |
+| [Ex_00.c](Lab%2006/Ex_00.c) | Demonstrates pointer basics, printing addresses and dereferenced values |
+| [Ex_01.c](Lab%2006/Ex_01.c) | Creates a single POSIX thread and waits for it using pthread_join |
+| [Ex_02.c](Lab%2006/Ex_02.c) | Creates two POSIX threads running the same function concurrently |
+| [Ex_03.c](Lab%2006/Ex_03.c) | Creates three threads, each printing its own pthread_self ID |
+| [Ex_04.c](Lab%2006/Ex_04.c) | Creates five threads in a loop with error handling for pthread_create |
+| [Ex_05.c](Lab%2006/Ex_05.c) | Creates five threads passing an integer parameter to each thread function |
+| [Ex_06.c](Lab%2006/Ex_06.c) | Creates a thread with a struct parameter containing range and message |
 
 ### Lab 7 — [Lab 07/](Lab%2007/)
 
@@ -217,17 +217,17 @@ This repository covers the lab sessions for CS306 Operating Systems, structured 
 
 | File | Description |
 | --- | --- |
-| [struct.c](Lab%2007/struct.c) | Struct basics in C |
-| [Ex_07.c](Lab%2007/Ex_07.c) | Struct with threads |
-| [Ex_08.c](Lab%2007/Ex_08.c) | Pass multiple values via struct |
-| [Ex_09.c](Lab%2007/Ex_09.c) | Retrieve value from thread |
-| [Ex_10.c](Lab%2007/Ex_10.c) | Race condition demo |
-| [Ex_11.c](Lab%2007/Ex_11.c) | Mutex usage |
-| [Ex_12.c](Lab%2007/Ex_12.c) | Mutex usage |
-| [Ex_13.c](Lab%2007/Ex_13.c) | Semaphore usage |
-| [Ex_14.c](Lab%2007/Ex_14.c) | Deadlock scenario |
-| [Ex_15.c](Lab%2007/Ex_15.c) | Synchronization |
-| [Ex_16.c](Lab%2007/Ex_16.c) | Synchronization |
+| [struct.c](Lab%2007/struct.c) | Struct definition, initialization methods, and function operations on product structs |
+| [Ex_07.c](Lab%2007/Ex_07.c) | Thread receives a struct, modifies its members, and returns via pthread_exit |
+| [Ex_08.c](Lab%2007/Ex_08.c) | Creates three threads each with unique ID/name pairs passed via struct pointers |
+| [Ex_09.c](Lab%2007/Ex_09.c) | Race condition demo: five threads increment shared counter without synchronization |
+| [Ex_10.c](Lab%2007/Ex_10.c) | Thread computes square and cube via struct input/output parameters |
+| [Ex_11.c](Lab%2007/Ex_11.c) | Race condition demo: multiple threads access shared memory without synchronization |
+| [Ex_12.c](Lab%2007/Ex_12.c) | Mutex-protected shared counter incremented 500k times across multiple threads |
+| [Ex_13.c](Lab%2007/Ex_13.c) | Thread-safe stack with push/pop operations protected by mutex |
+| [Ex_14.c](Lab%2007/Ex_14.c) | Bank account with mutex-protected concurrent deposit/withdraw operations |
+| [Ex_15.c](Lab%2007/Ex_15.c) | Binary semaphore (value=1) for mutual exclusion in a critical section |
+| [Ex_16.c](Lab%2007/Ex_16.c) | Counting semaphore (value=2) limiting concurrent resource access to two threads |
 
 ### Lab 8 — [Lab 08/](Lab%2008/)
 
@@ -239,15 +239,15 @@ This repository covers the lab sessions for CS306 Operating Systems, structured 
 
 | File | Description |
 | --- | --- |
-| [Producer-Consumer1.c](Lab%2008/Producer-Consumer1.c) | Producer-Consumer with Mutex & Condition Variables |
-| [Producer-Consumer2.c](Lab%2008/Producer-Consumer2.c) | Producer-Consumer with Semaphore |
-| [ReadersWriters.c](Lab%2008/ReadersWriters.c) | Readers-Writers Problem |
-| [dining-philosopher.c](Lab%2008/dining-philosopher.c) | Dining-Philosophers Problem |
+| [Producer-Consumer1.c](Lab%2008/Producer-Consumer1.c) | Producer-consumer with mutex and condition variables for buffer synchronization |
+| [Producer-Consumer2.c](Lab%2008/Producer-Consumer2.c) | Producer-consumer using three semaphores (mutex, full, empty) |
+| [ReadersWriters.c](Lab%2008/ReadersWriters.c) | Readers-writers problem allowing multiple concurrent readers but exclusive writers |
+| [dining-philosopher.c](Lab%2008/dining-philosopher.c) | Dining philosophers problem with six philosophers using semaphores and state tracking |
 
 ### Lab 9 (Practical Exam)
 
-***
-***
+---
+---
 
 ## Threads using JAVA
 
@@ -270,21 +270,20 @@ This repository covers the lab sessions for CS306 Operating Systems, structured 
 
 | File | Description |
 | --- | --- |
-| [Ex01_ThreadExample.java](Lab%2010/Ex01_ThreadExample.java) | Thread class basics |
-| [Ex02_RunnableExample.java](Lab%2010/Ex02_RunnableExample.java) | Runnable interface |
-| [Ex03_VolatileFixExample.java](Lab%2010/Ex03_VolatileFixExample.java) | volatile keyword |
-| [Ex04_SynchronizedExample.java](Lab%2010/Ex04_SynchronizedExample.java) | synchronized method/block |
-| [Ex05_SimpleLockExample.java](Lab%2010/Ex05_SimpleLockExample.java) | Lock usage |
-| [Ex06_SemaphoreExample.java](Lab%2010/Ex06_SemaphoreExample.java) | Semaphore |
-| [Ex07_LockConditionExample.java](Lab%2010/Ex07_LockConditionExample.java) | Condition variables |
-| [Ex08_ExecutorServiceExample.java](Lab%2010/Ex08_ExecutorServiceExample.java) | ExecutorService |
-| [Ex09_ExecutorDemo.java](Lab%2010/Ex09_ExecutorDemo.java) | Executor demo |
-| [Ex10_FutureExample.java](Lab%2010/Ex10_FutureExample.java) | Future |
-| [Ex11_CallableFutureExample.java](Lab%2010/Ex11_CallableFutureExample.java) | Callable + Future |
-| [AccountWithoutSync.java](Lab%2010/AccountWithoutSync.java) | Race condition demo |
-| [ArraySum.java](Lab%2010/ArraySum.java) | Parallel array sum |
-| [TaskThreadDemo.java](Lab%2010/TaskThreadDemo.java) | Task thread demo |
-
+| [Ex01_ThreadExample.java](Lab%2010/Ex01_ThreadExample.java) | Creates a thread by extending Thread class and overriding run method |
+| [Ex02_RunnableExample.java](Lab%2010/Ex02_RunnableExample.java) | Creates two threads implementing Runnable from the same runnable object |
+| [Ex03_VolatileFixExample.java](Lab%2010/Ex03_VolatileFixExample.java) | volatile keyword ensuring thread visibility of a shared boolean flag |
+| [Ex04_SynchronizedExample.java](Lab%2010/Ex04_SynchronizedExample.java) | synchronized method for safe counter increment from two threads (10k each) |
+| [Ex05_SimpleLockExample.java](Lab%2010/Ex05_SimpleLockExample.java) | ReentrantLock for explicit synchronization across three concurrent threads |
+| [Ex06_SemaphoreExample.java](Lab%2010/Ex06_SemaphoreExample.java) | Semaphore(3) limiting concurrent resource access among 10 requesting threads |
+| [Ex07_LockConditionExample.java](Lab%2010/Ex07_LockConditionExample.java) | Lock and Condition used for producer-consumer thread synchronization |
+| [Ex08_ExecutorServiceExample.java](Lab%2010/Ex08_ExecutorServiceExample.java) | Fixed thread pool of 2 submitting three tasks, demonstrates task scheduling |
+| [Ex09_ExecutorDemo.java](Lab%2010/Ex09_ExecutorDemo.java) | Thread pool executing char-printer and number-printer tasks concurrently |
+| [Ex10_FutureExample.java](Lab%2010/Ex10_FutureExample.java) | Callable task returning an integer result retrieved via Future.get() |
+| [Ex11_CallableFutureExample.java](Lab%2010/Ex11_CallableFutureExample.java) | Three callable tasks with different sleep times, results collected via futures |
+| [AccountWithoutSync.java](Lab%2010/AccountWithoutSync.java) | Race condition demo: 100 threads deposit without synchronization |
+| [ArraySum.java](Lab%2010/ArraySum.java) | Parallel sum of 1000-element array split across 10 threads |
+| [TaskThreadDemo.java](Lab%2010/TaskThreadDemo.java) | Three threads printing characters and numbers concurrently without coordination |
 
 ### Lab 11 (Self-Study) — [Lab 11/](Lab%2011/)
 
@@ -321,10 +320,11 @@ This repository covers the lab sessions for CS306 Operating Systems, structured 
    - Methods like `incrementAndGet()` avoid race conditions.
 
 ### Lab 12 (Practical Exam)
-  - Tuesday: May 13, 2025
 
-***
-***
+- Tuesday: May 13, 2025
+
+---
+---
 
 ## Course Info
 
