@@ -297,3 +297,15 @@
 
 ***
 ***
+
+## Course Info
+
+| | |
+| --- | --- |
+| **Course Instructor** | Dr. Hatem Moharrem |
+| **Lab Instructors** | Mahmoud Esmat, Omar Mourad, Ranya Ayman |
+
+---
+
+**Cairo University, Faculty of Science**
+Department of Mathematics — Computer Science Division
