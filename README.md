@@ -4,6 +4,28 @@
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
+<!-- code_chunk_output -->
+## Table of Contents
+
+- [Lab Outline](#lab-outline)
+  - [Assembly X8086](#assembly-x8086)
+    - [Labs 1 and 2](#labs-1-and-2--lab-01--lab-02)
+    - [Lab 3](#lab-3--lab-03)
+    - [Lab 4](#lab-4--lab-04)
+    - [Lab 5](#lab-5--lab-05)
+  - [Threads using C](#threads-using-c)
+    - [Lab 6](#lab-6--lab-06)
+    - [Lab 7](#lab-7--lab-07)
+    - [Lab 8](#lab-8--lab-08)
+    - [Lab 9 (Practical Exam)](#lab-9-practical-exam)
+  - [Threads using JAVA](#threads-using-java)
+    - [Lab 10](#lab-10--lab-10)
+    - [Lab 11 (Self-Study)](#lab-11-self-study--lab-11)
+    - [Lab 12 (Practical Exam)](#lab-12-practical-exam)
+  - [Course Info](#course-info)
+
+<!-- /code_chunk_output -->
+
 ***
 
 # Lab Outline
@@ -307,5 +329,6 @@
 
 ---
 
-**Cairo University, Faculty of Science**
+### Cairo University, Faculty of Science
+
 Department of Mathematics — Computer Science Division
