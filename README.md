@@ -16,7 +16,7 @@
 
 ### Labs 1 and 2 — [Lab 01/](Lab%2001/) | [Lab 02/](Lab%2002/)
 
-> Exercises: [Lab 1 - Exercises.md](Lab%201%20-%20Exercises.md) | [Lab 2 - Exercises.md](Lab%202%20-%20Exercises.md)
+> Exercises: [Lab 1 - Exercises.md](Exercises/Lab%201%20-%20Exercises.md) | [Lab 2 - Exercises.md](Exercises/Lab%202%20-%20Exercises.md)
 
 - Basic Structure for Assembly X8086 program.
 - Basic instructions: **MOV**, **ADD**, **SUB**
@@ -60,7 +60,7 @@
 
 ### Lab 3 — [Lab 03/](Lab%2003/)
 
-> Exercises: [Lab 3 - Exercises.md](Lab%203%20-%20Exercises.md)
+> Exercises: [Lab 3 - Exercises.md](Exercises/Lab%203%20-%20Exercises.md)
 
 - how to define an array (initialized or not):
   - array of bytes
@@ -97,7 +97,7 @@
 
 ### Lab 4 — [Lab 04/](Lab%2004/)
 
-> Exercises: [Lab 4 - Exercises.md](Lab%204%20-%20Exercises.md)
+> Exercises: [Lab 4 - Exercises.md](Exercises/Lab%204%20-%20Exercises.md)
 
 - More exercises on using **Loop** and arrays.
 - More instrustions:
@@ -124,7 +124,7 @@
 
 ### Lab 5 — [Lab 05/](Lab%2005/)
 
-> Exercises: [Lab 5 - Exercises.md](Lab%205%20-%20Exercises.md)
+> Exercises: [Lab 5 - Exercises.md](Exercises/Lab%205%20-%20Exercises.md)
 
 - More difficult exercises covering **Loop**,  arrays, and conditional jump control instructions for unsigned and signed.
 - **PRINT** and **PRINTN**
@@ -154,8 +154,6 @@
 
 ### Lab 6 — [Lab 06/](Lab%2006/)
 
-> Exercises: [Compile and Run C Files with Threads.md](Lab%2006/Compile%20and%20Run%20C%20Files%20with%20Threads.md)
-
 - Processes and Threads: Definitions and Differences
 - Threads vs Processes
 - Need for Multithreading
@@ -163,7 +161,7 @@
 - Types of Threads
 - Thread Libraries
 - Creating and Assigning Work to Threads
-- Compile and Run C Files with Threads
+- [Compile and Run C Files with Threads](Lab%2006/Compile%20and%20Run%20C%20Files%20with%20Threads.md)
 - Pointers & References.
 
 | File | Description |
@@ -178,11 +176,9 @@
 
 ### Lab 7 — [Lab 07/](Lab%2007/)
 
-> Exercises: [struct in C.md](Lab%2007/struct%20in%20C.md) | [pthread_join.md](Lab%2007/pthread_join.md)
-
-- Struct Usage in C
+- [Struct Usage in C](Lab%2007/struct%20in%20C.md)
 - How to use struct to pass multiple values to the thread function
-- Retrieve value from Thread function
+- [Retrieve value from Thread function](Lab%2007/pthread_join.md)
 - Passing & Retrieving Multiple Values via Struct
 - Synchronization between Threads
 - Race condition
@@ -229,8 +225,6 @@
 
 ### Lab 10 — [Lab 10/](Lab%2010/)
 
-> Exercises: [Lambda Expression.md](Lab%2010/Lambda%20Expersion.md)
-
 - Creating threads using **Thread** class
 - Creating threads using **Runnable** interface
 - Synchronizartion tools:
@@ -243,7 +237,7 @@
   - semaphores
   - condition variables
 - Creating Thread Pool using **ExecutorService**
-- Lambda expresssion
+- [Lambda Expression](Lab%2010/Lambda%20Expersion.md)
 - Using **Future** to wait for the returned value from a thread
 
 | File | Description |
