@@ -28,6 +28,12 @@
 
 ***
 
+## Lab Summary
+
+This repository covers the lab sessions for CS306 Operating Systems, structured into three main tracks. The course begins with low-level **x86 Assembly** programming using Emu8086, covering registers, memory, control flow, arrays, and arithmetic instructions. It then transitions to **multithreading in C** using POSIX threads (pthreads), exploring thread creation, synchronization primitives (mutex, semaphore, condition variables), and classic concurrency problems. Finally, the course covers **multithreading in Java**, introducing the Thread API, Runnable interface, synchronization tools, thread pools, and concurrent utilities from `java.util.concurrent`. The objective is to build a solid understanding of concurrency, synchronization, and low-level system programming from both hardware and software perspectives.
+
+***
+
 # Lab Outline
 
 ## Assembly X8086
@@ -324,6 +330,7 @@
 
 | | |
 | --- | --- |
+| **Course Code** | CS306 |
 | **Course Instructor** | Dr. Hatem Moharrem |
 | **Lab Instructors** | Mahmoud Esmat, Omar Mourad, Ranya Ayman |
 
